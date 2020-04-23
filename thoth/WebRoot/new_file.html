@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			html,
+			body {
+				background-color: #000000;
+				text-align: center;
+				position: relative;
+				width: 100%;
+			}
+
+			input {
+				background: none;
+				outline: none;
+				border: none;
+				color: #FFFFFF;
+				border: 1px solid #ccc;
+				border-radius: 6px;
+
+			}
+
+			select {
+				border: none;
+				outline: none;
+
+				background-color: #000000;
+				color: #FFFFFF;
+				cursor: pointer;
+			}
+
+			span {
+				color: #FFFFFF;
+			}
+
+			table {
+
+				width: 600px;
+				border-collapse: collapse;
+				text-align: center;
+				margin: 10px 5px 10px;
+				cursor: default;
+				border: 1px solid x#aaff7f;
+				margin-top: 1.25rem;
+				border: 0.0625rem solid rgba(127, 255, 255, 0.75);
+				top: 18.75rem;
+
+			}
+
+			.tab_head>th {
+				font-weight: 300;
+				text-align: center;
+				padding: 0.625rem 0 0.625rem 0;
+				background-color: rgba(0, 93, 93, 0.8);
+				color: #efefef;
+			}
+
+			.detail_panel_tab-t>th {
+				font-weight: 300;
+				text-align: center;
+				padding: 0.625rem 0 0.625rem 0;
+				background-color: rgba(0, 93, 93, 0.8);
+				color: #efefef;
+			}
+
+			th,
+			td {
+				border: 1px solid rgba(127, 255, 255, 0.55);
+				color: #fff;
+				text-align: center;
+				font-weight: 200;
+			}
+
+			.tab_item:hover {
+				background-color: rgba(0, 99, 99, 0.9) !important;
+			}
+
+			.tab_item:nth-child(2n 1) {
+				background-color: rgba(0, 127, 127, 0.1);
+			}
+
+			#center {
+				position: absolute;
+				width: 600px;
+				text-align: center;
+				margin: 0 auto;
+				top: 6.25rem;
+				left: 30%;
+			}
+
+			input::-webkit-input-placeholder {
+				color: #f8f8f8;
+				font-size: 12px;
+			}
+
+			input::-moz-input-placeholder {
+				color: #f8f8f8;
+				font-size: 12px;
+			}
+
+			input::-ms-input-placeholder {
+				color: #f8f8f8;
+				font-size: 12px;
+			}
+
+			.two {
+				position: absolute;
+				z-index: 10;
+				border: 0.0625rem solid #00FF00;
+				background-color: rgba(16, 75, 118, 0.7);
+				left: 0;
+				top: 1.25rem;
+				display: none;
+			}
+
+			#tim {
+				width: 9.375rem;
+				height: 3.125rem;
+				text-align: center;
+				color: #FFFFFF;
+				position: absolute;
+				z-index: 50;
+				top: 6.25rem;
+				left: 10%;
+				border-radius: 0.625rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="center">
+			<table border="1" cellspacing="0" cellpadding="0" class="tab" align="center">
+				<tr>
+					<th>人物名称</th>
+					<td><input type="text" name="" id="" placeholder="订单名" /></td>
+					<td><input type="text" name="" id="" placeholder="商品名" /></td>
+
+					<td>商品名称:</td>
+					<td>
+						<select class="field">
+							<option>审核中</option>
+							<option>竞价中</option>
+							<option>审核失败</option>
+							<option>竞价结束</option>
+					</select>
+					</td>
+					<td>
+						<input type="button" name="" id="" value="搜索" />
+					</td>
+				</tr>
+			</table>
+			<div>
+				<table id="zbg" border="1" cellspacing="0" cellpadding="0" class="tab" align="center">
+					<tr class="tab_head">
+						<th>姓名</th>
+						<th>性别</th>
+						<th>家乡</th>
+						<th>特性</th>
+						<th>详情</th>
+					</tr>
+					<!-- <tr class="tab_item">
+						<td>孙悟空/卡卡罗特</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>
+							<input value="细节" type="button">
+							<input value="删除" type="button">
+						</td>
+					</tr>
+					<tr class="tab_item">
+						<td>夏尔</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>
+							<input value="细节" type="button">
+							<input value="删除" type="button">
+						</td>
+					</tr>
+					<tr class="tab_item">
+						<td>漩涡鸣人</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>
+							<input value="细节" type="button">
+							<input value="删除" type="button">
+						</td>
+					</tr> -->
+				</table>
+			</div>
+			<table border="1" cellspacing="0" cellpadding="0" class="tab" align="center">
+
+				<tr>
+					<input type="button" name="" id="" value="上页" />
+					<span class="text">0/0</span>
+					<input type="button" name="" id="" value="下页" />
+				</tr>
+			</table>
+			<div id="tbg" class="two">
+				<div class="two-head">
+					<table align="center">
+
+						<tr>
+							<td>
+								<input type="button" name="" id="cancel" value="取消" class="btn" />
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id="" class="two-en">
+					<table border="1" id="ther" cellspacing="0" cellpadding="0" class="detail_panel_tab" align="center">
+						<tr class="detail_panel_tab-t">
+							<th>姓名</th>
+							<th>家乡</th>
+							<th>特性</th>
+							<th>等级</th>
+						</tr>
+						<tr class="tab_item">
+							<td id="na">卡卡罗特</td>
+							<td>中国</td>
+							<td>武力强大的好孩子</td>
+							<td id="ji">ssr</td>
+						</tr>
+						<tr class="tab_item">
+							<td id="con">鸣人</td>
+							<td>日本木叶</td>
+							<td>傻兮兮的</td>
+							<td>ssr</td>
+						</tr>
+						<tr class="tab_item">
+							<td id="te">夏尔</td>
+							<td>英国</td>
+							<td>可爱</td>
+							<td>ssr</td>
+						</tr>
+
+					</table>
+				</div>
+
+			</div>
+		</div>
+		
+		<!-- <div id="">
+			<input type="text" id="tim" />
+		</div>
+		<div id="" style="color: #FFFFFF;">
+			<p id="Tim">100</p>
+			<p id="Font">将跳转至登录界面</p>
+		</div> -->
+		<script src="./js/new_file.js"></script>
+	</body>
+</html>

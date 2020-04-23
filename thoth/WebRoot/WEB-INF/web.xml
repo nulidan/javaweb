@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>thoth</display-name>
+  <welcome-file-list>
+    <welcome-file>index1.jsp</welcome-file>
+    
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file></welcome-file>
+  </welcome-file-list>
+  <!-- 跳转到首页 -->
+  <servlet>
+  <servlet-name>syServlet</servlet-name>
+  <servlet-class>thoth.servlet.syServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>syServlet</servlet-name>
+  	<url-pattern>/sy</url-pattern>
+  </servlet-mapping>
+   <!-- 跳转到登录 -->
+  <servlet>
+  <servlet-name>index1Servlet</servlet-name>
+  <servlet-class>thoth.servlet.index1Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>index1Servlet</servlet-name>
+  	<url-pattern>/index1</url-pattern>
+  </servlet-mapping>
+  	<!-- 跳转到注册 -->
+  <servlet>
+  <servlet-name>index2Servlet</servlet-name>
+  <servlet-class>thoth.servlet.index2Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>index2Servlet</servlet-name>
+  	<url-pattern>/index2</url-pattern>
+  </servlet-mapping>
+  <!--  登录验证 -->
+      <servlet>
+    <servlet-name>index1CheckServlet</servlet-name>
+    <servlet-class>thoth.servlet.index1CheckServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>index1CheckServlet</servlet-name>
+    <url-pattern>/index1CheckServlet</url-pattern>
+  </servlet-mapping>
+  <!-- 删除商品 -->
+	<servlet>
+		<servlet-name>deleteGoodsServlet</servlet-name>
+		<servlet-class>thoth.servlet.deleteGoodsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteGoodsServlet</servlet-name>
+		<url-pattern>/deleteGoods</url-pattern>
+	</servlet-mapping>
+
+	<!-- ajax查询商品 -->
+	<servlet>
+		<servlet-name>selectGoodsServlet</servlet-name>
+		<servlet-class>thoth.servlet.SelextGoodsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>selectGoodsServlet</servlet-name>
+		<url-pattern>/selectGoods</url-pattern>
+	</servlet-mapping> 
+</web-app>

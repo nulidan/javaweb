@@ -1,0 +1,150 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: boeder-box;
+	font-family: sans-serif;
+	font-weight: 300;
+	outline: none;
+	
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	/*background-image: url(img/timg.jpg);*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+@keyframes Gradient {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+}
+
+.mask {
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	animation: Gradient 15s ease infinite;
+	position: fixed;
+	z-index: -1;
+	position: relative;
+}
+.login{
+	border:0.0625rem solid #FFFFFF;
+	width: 25rem;
+	height: 31.25rem; 
+	position: absolute;
+	text-align: center;
+	top: 6.25rem;
+	left: 40%;
+	border-radius: 1.25rem;
+	
+}
+.goback1{
+	position: absolute;
+	top: 0.625rem;
+	left: 80%;
+}
+
+.mui-group {
+	padding-top: 9.375rem;
+	text-align: center;
+}
+
+.mui-input-row+.mui-input-row {
+	margin-top: 1.875rem;
+}
+
+.mui-input-row {
+	margin: 0;
+	
+}
+
+.mui-input-row label {
+	
+}
+
+.mui-input-row span {
+	user-select: none;
+	color: #D4CFCF;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.mui-input-clear {
+	width: 18.75rem;
+	height: 2.25rem;
+	font-size: 1rem;
+	border: none;
+	color: #FFFFFF;
+	background-color: transparent;
+	border-bottom: 0.0625rem solid #FFFFFF;
+}
+
+.mui-input-psw {
+	width: 18.75rem;
+	height: 2.25rem;
+	font-size: 1rem;
+	border: none;
+	color: #FFFFFF;
+	background-color: transparent;
+	border-bottom: 0.0625rem solid #FFFFFF;
+}
+
+#login {
+	width: 9.375rem;
+	height: 1.875rem;
+	background-color: transparent;
+	color: #FFFFFF;
+	border: 0.0625rem solid #fff;
+	cursor: pointer;
+	border-radius: 0.625rem;
+}
+.goback{
+	width: 2.125rem;
+	height: 1.875rem;
+	background-color: transparent;
+	color: #FFFFFF;
+	border: 0.0625rem solid #fff;
+	cursor: pointer;
+	border-radius: 1.125rem;
+}
+
+a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.link {
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 0.875rem;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+.mui-reg-group span {
+	user-select: none;
+	color: #FFFFFF;
+}
+
+input::-webkit-input-placeholder {
+	color: #FFFFFF;
+}
+
+input::-moz-input-placeholder {
+	color: #FFFFFF;
+}
+
+input::-ms-input-placeholder {
+	color: #FFFFFF;
+}

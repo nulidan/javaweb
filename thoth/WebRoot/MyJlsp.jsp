@@ -20,7 +20,7 @@
 <!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.0/jquery.js"></script>
 </head>
 
 <body>
